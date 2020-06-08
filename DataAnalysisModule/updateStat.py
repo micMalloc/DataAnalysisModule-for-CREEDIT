@@ -6,8 +6,8 @@ from datetime import datetime
 
 key = ""
 
-local = pymysql.connect(host='localhost', user='root', password='gml7594!tn', db='creedit', charset='utf8')
-# creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='ehdgus93!', db='db_creedit', charset='utf8')
+local = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
+# creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='', db='db_creedit', charset='utf8')
 
 cursor = local.cursor()
 # manager = creedit.cursor()
