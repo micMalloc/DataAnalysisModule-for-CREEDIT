@@ -7,7 +7,7 @@ import ssl
 connection = pymysql.connect(
     host='localhost',
     user='root',
-    password='gml7594!tn',
+    password='',
     db='creedit',
     charset='utf8'
 )

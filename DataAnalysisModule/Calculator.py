@@ -9,7 +9,7 @@ path = '/Library/Fonts/NanumGothicBold.otf'
 font_name = font_manager.FontProperties(fname=path, size=15).get_name()
 plt.rc('font', family=font_name)
 
-connection = pymysql.connect(host='localhost', user='root', password='gml7594!tn', db='creedit', charset='utf8')
+connection = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
 
 cursor = connection.cursor()
 
