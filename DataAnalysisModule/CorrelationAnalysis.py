@@ -53,15 +53,25 @@ def get_data_frame(channel, database):
 
     return pandas.DataFrame([x, y]).T
 
+
 def correlation_anlysis(channel, database):
     cor_coeif = 0
     
     data_frame = get_data_frame(channel, database)
-
-
     cor_coeif = data_frame.corr(method='pearson')
 
     return cor_coeif
+
+def print_list_to_csv(rows):
+    import csv
+    # CSV 파일 한글 깨짐 현상을 방지하기 위해 encoding='utf-8-sig'를 해주어야 한다.
+    with open('CorrelationAnalysis.csv', 'w', encoding='utf-8-sig', newline='') as file:
+        writer = csv.writer(file)
+        
+        writer.writerow(['채널명', '상관계수'])
+        for row in rows:
+            writer.writerow(row)
+
 
 if __name__ == "__main__":
     db_creedit = pymysql.connect(host='203.245.30.13', user='', password='', db='db_creedit', charset='utf8')
