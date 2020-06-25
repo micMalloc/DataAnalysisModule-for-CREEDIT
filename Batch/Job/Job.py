@@ -1,8 +1,8 @@
-from abs import *
+from abc import *
 
 
 class Job(metaclass=ABCMeta):
     
     @abstractmethod
-    def do_job(self):
+    def doJob(self):
         pass

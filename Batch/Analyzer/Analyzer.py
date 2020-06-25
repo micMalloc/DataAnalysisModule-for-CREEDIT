@@ -1,10 +1,13 @@
-from abs import *
+from abc import *
 from Job import Job
 
-class Analyzer(Job):
+class DataAnalyzer(Job):
 
     _metaclass_=ABCMeta
 
+    def doJob(self):
+        self.analyzeData()
+
     @abstractmethod
-    def anlayze_data():
+    def analyzeData(self):
         pass
