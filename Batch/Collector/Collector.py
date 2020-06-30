@@ -25,3 +25,6 @@ class YouTubeDataCollector(DataCollector):
 
     def collectData(self):
         pass
+
+    def collectStatisticsData(self):
+        pass
