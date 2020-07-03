@@ -17,3 +17,7 @@ class Logger(metaclass=SingletonType):
     
     def __init__(self):
         pass
+    
+    @classmethod
+    def get_instance(cls):
+        pass
