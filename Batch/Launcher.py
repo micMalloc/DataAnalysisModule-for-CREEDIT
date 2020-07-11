@@ -1,7 +1,6 @@
-from Job import *
 import json
 from queue import Queue
-
+from Job.Job import JobFactory
 
 class Launcher:
 
@@ -20,6 +19,9 @@ class Launcher:
             
     def makeJobQueue(self):
         que = Queue()
+        print("make queue")
+        que.put(JobFactory.create_job())
+
         return que
     
     def getJob(self):
@@ -35,7 +37,9 @@ class Launcher:
             job = self.jobQue.get(False)
 
             try:
-                job.doJob()
+                print(job)
+                print("do job")
+                job.do_job()
             except Exception:
                 # Send Mail to authorized users
                 pass

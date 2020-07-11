@@ -17,3 +17,10 @@ class DataAnalyzer(Job, metaclass=ABCMeta):
     @abstractmethod
     def analyzeData(self):
         pass
+
+
+class DataAnalyzerFactory:
+
+    @classmethod
+    def create_data_analyzer(cls, meta):
+        pass
