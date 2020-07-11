@@ -12,7 +12,7 @@ class DataCollector(Job):
         pass
 
     def do_job(self):
-        self.collectData()
+        self.collect_data()
 
     @abstractmethod
     def collect_data(self):

@@ -2,6 +2,7 @@ import json
 from queue import Queue
 from Job.Job import JobFactory
 
+
 class Launcher:
 
     def __init__(self, PATH=None):
