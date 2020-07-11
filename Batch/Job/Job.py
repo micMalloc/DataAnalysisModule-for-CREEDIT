@@ -1,6 +1,5 @@
 from abc import *
-from Analyzer import Analyzer
-from Collector import Collector
+from .Analyzer.Analyzer import DataAnalyzer
 
 
 class Job(metaclass=ABCMeta):
@@ -9,5 +8,6 @@ class Job(metaclass=ABCMeta):
     def doJob(self):
         pass
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     job = DataAnalyzer()
