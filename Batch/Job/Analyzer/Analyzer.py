@@ -11,11 +11,11 @@ class DataAnalyzer(Job, metaclass=ABCMeta):
     def __init__(self):
         pass
 
-    def doJob(self):
+    def do_job(self):
         self.analyzeData()
 
     @abstractmethod
-    def analyzeData(self):
+    def analyze_data(self):
         pass
 
 
