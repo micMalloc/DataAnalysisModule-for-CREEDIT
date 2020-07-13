@@ -1,5 +1,6 @@
 import json
 from queue import Queue
+from Log.Logger import Logger
 from Job.Job import JobFactory
 
 
@@ -10,9 +11,9 @@ class Launcher:
             self.meta_data = self.load_meta_data(path)
             self.job_que = self.make_job_queue()
         else:
-            self.metaData = None
+            self.meta_data = None
         
-        print(self.metaData)
+        print(self.meta_data)
 
     def load_meta_data(self, PATH):
         with open(PATH) as jsonFile:
