@@ -10,7 +10,6 @@ class Job(metaclass=ABCMeta):
 
     def __init__(self):
         self.logger = Logger.get_instance()
-        pass
 
     @abstractmethod
     def do_job(self):

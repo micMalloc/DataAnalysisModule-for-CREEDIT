@@ -30,11 +30,23 @@ class Logger(metaclass=SingletonType):
     def get_logger(self):
         return self.__logger
 
-    def info(self, msg):
-        self.__logger.info(msg)
+    def info(self, message):
+        self.__logger.info(message)
     
-    def debug(self, msg):
-        self.__logger.debug(msg)
+    def error(self, message):
+        self.__logger.error(message)
+
+    def critical(self, message):
+        self.__logger.critical(message)
+
+    def debug(self, message):
+        self.__logger.debug(message)
+
+    def upload_issue_to_github(self):
+        pass
+
+    def send_email(self):
+        pass
 
     @classmethod
     def get_instance(cls):

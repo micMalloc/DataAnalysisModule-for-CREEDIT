@@ -13,6 +13,7 @@ class Launcher:
         else:
             self.meta_data = None
         
+        self.logger = Logger.get_instance()
         print(self.meta_data)
 
     def load_meta_data(self, PATH):
@@ -43,6 +44,8 @@ class Launcher:
                 # TODO define do job exception for handling issue
                 # TODO Logger may be used in this section
                 # Send Mail to authorized users
+                self.logger.error("Do Not Complete Job")
+                self.logger.send_email()
                 pass
 
 

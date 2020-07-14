@@ -10,8 +10,7 @@ from Log.Logger import Logger
 class DataCollector(Job):
 
     def __init__(self):
-        super().__init__()
-        pass
+        super().__init__()      
 
     def do_job(self):
         self.collect_data()
@@ -25,7 +24,6 @@ class YouTubeDataCollector(DataCollector):
 
     def __init__(self):
         super().__init__()
-        pass
 
     def collect_data(self):
         self.collect_statistics_data()
