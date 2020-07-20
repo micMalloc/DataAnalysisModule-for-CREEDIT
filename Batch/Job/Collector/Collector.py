@@ -11,7 +11,7 @@ class DataCollector(Job):
 
     def __init__(self):
         super().__init__()      
-        self.logger.info("DataCollector init")
+        self.logger.info("DataCollector created")
 
     def do_job(self):
         self.collect_data()
@@ -23,21 +23,31 @@ class DataCollector(Job):
 
 class YouTubeDataCollector(DataCollector):
 
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__()
-        self.logger.info("YouTubeDataCollector init")
+        self.logger.info("YouTubeDataCollector created")
+
+        try:
+            self.method = kwargs['method']
+        except Exception:
+            # kwargs['method'] must not be None
+            self.logger.critical('method is None')
 
     def collect_data(self):
-        self.collect_statistics_data()
+        if self.method in 'statistics':
+            self.collect_statistics_data()
 
     def collect_statistics_data(self):
         self.logger.info("collect statistics")
+        # DB 어세스
+        # 여기서 유투브 겟 정보를 --> DB 넣어야 될거 아니야
         pass
 
 
 class DataCollectorFactory:
 
     @classmethod
-    def crate_data_collector(cls):
-        return YouTubeDataCollector()
+    def crate_data_collector(cls, meta_data):
+        if meta_data['domain'] in 'youtube':
+            return YouTubeDataCollector(method=meta_data['method'])
 

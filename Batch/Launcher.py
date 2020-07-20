@@ -18,23 +18,16 @@ class Launcher:
         self.logger.info('Launcher Created')
 
     def load_meta_data(self, PATH):
-        # with open(PATH) as jsonFile:
-        #     return json.load(jsonFile)
         with open(PATH) as yaml_file:
             return yaml.load(yaml_file)
             
     def make_job_queue(self):
         que = Queue()
         
-        # for job in self.meta_data['job'].keys():
-        #     pass
-    
-        que.put(JobFactory.create_job())
+        for meta_data in self.meta_data['job']:
+            que.put(JobFactory.create_job(meta_data))
 
         return que
-    
-    def get_job(self):
-        pass
 
     def start(self):
         self.logger.info('Launcher Start')
@@ -51,16 +44,14 @@ class Launcher:
                 # TODO define do job exception for handling issue
                 # TODO Logger may be used in this section
                 # Send Mail to authorized users
-                self.logger.error("Job Fail")
-                self.logger.send_email()
+                self.logger.critical("Job Fail")
 
 
 if __name__ == "__main__":
     logger = Logger.get_instance().get_logger()
+    
     logger.info("Create Logger")
-
     batch_laungcher = Launcher("/Users/heesu.lee/DataAnalysisModule-for-CREEDIT/Batch/meta.yml")
+
     logger.info('Batch Start')
     batch_laungcher.start()
-    print("========================================")
-    print(Logger.get_instance().get_log_stream())
