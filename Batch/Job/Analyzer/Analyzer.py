@@ -6,7 +6,7 @@ from abc import *
 import Job.Job
 
 
-class DataAnalyzer(Job, metaclass=ABCMeta):
+class DataAnalyzer(Job):
 
     def __init__(self):
         pass
@@ -15,6 +15,12 @@ class DataAnalyzer(Job, metaclass=ABCMeta):
         self.analyzeData()
 
     @abstractmethod
+    def analyze_data(self):
+        pass
+
+
+class YouTubeDataAnalyzer(DataAnalyzer):
+    
     def analyze_data(self):
         pass
 

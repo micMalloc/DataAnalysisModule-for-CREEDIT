@@ -11,6 +11,7 @@ class DataCollector(Job):
 
     def __init__(self):
         super().__init__()      
+        self.logger.info("DataCollector init")
 
     def do_job(self):
         self.collect_data()
@@ -24,14 +25,13 @@ class YouTubeDataCollector(DataCollector):
 
     def __init__(self):
         super().__init__()
+        self.logger.info("YouTubeDataCollector init")
 
     def collect_data(self):
         self.collect_statistics_data()
 
     def collect_statistics_data(self):
-        print(self.logger)
-        self.logger.info("Logging Test")
-        print("collect statistics")
+        self.logger.info("collect statistics")
         pass
 
 

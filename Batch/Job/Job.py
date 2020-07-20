@@ -9,7 +9,8 @@ class Job(metaclass=ABCMeta):
     logger = None
 
     def __init__(self):
-        self.logger = Logger.get_instance()
+        self.logger = Logger.get_instance().get_logger()
+        self.logger.info('Job init')
 
     @abstractmethod
     def do_job(self):
@@ -21,5 +22,5 @@ class JobFactory:
     @classmethod
     def create_job(cls):
         from .Collector.Collector import DataCollectorFactory
-        print("create data collector")
+        Logger.get_instance().get_logger().info("create data collector")
         return DataCollectorFactory.crate_data_collector()

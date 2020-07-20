@@ -3,6 +3,21 @@ import os
 import datetime
 
 
+class LogStream(object):
+    
+    def __init__(self):
+        self.logs = ''
+
+    def write(self, log):
+        self.logs += log
+
+    def flush(self):
+        pass
+
+    def __str__(self):
+        return self.logs
+
+
 class SingletonType(type):
     _instance = {}
 
@@ -17,10 +32,13 @@ class Logger(metaclass=SingletonType):
     __logger = None
 
     def __init__(self):
+        self.__log_stream = LogStream()
+        _format = '%(asctime)s  [%(levelname)s | %(filename)s:%(lineno)s] > %(message)s'
+        logging.basicConfig(stream=self.__log_stream, level=logging.DEBUG, format=_format)
+
         self.__logger = logging.getLogger("CREEDIT_BATCH")
-        self.__logger.setLevel(logging.DEBUG)
-        
-        formatter = logging.Formatter('%(asctime)s  [%(levelname)s | %(filename)s:%(lineno)s] > %(message)s')
+
+        formatter = logging.Formatter(_format)
 
         streamHandler = logging.StreamHandler()
         streamHandler.setFormatter(formatter)
@@ -30,17 +48,8 @@ class Logger(metaclass=SingletonType):
     def get_logger(self):
         return self.__logger
 
-    def info(self, message):
-        self.__logger.info(message)
-    
-    def error(self, message):
-        self.__logger.error(message)
-
-    def critical(self, message):
-        self.__logger.critical(message)
-
-    def debug(self, message):
-        self.__logger.debug(message)
+    def get_log_stream(self):
+        return self.__log_stream
 
     def upload_issue_to_github(self):
         pass
