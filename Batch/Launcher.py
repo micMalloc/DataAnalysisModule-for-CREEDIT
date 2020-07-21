@@ -1,8 +1,8 @@
 import json
 import yaml
 from queue import Queue
-from Log.Logger import Logger
-from Job.Job import JobFactory
+from Batch.Log.Logger import Logger
+from Batch.Job.Job import JobFactory
 
 
 class Launcher:
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     logger = Logger.get_instance().get_logger()
     
     logger.info("Create Logger")
-    batch_laungcher = Launcher("/Users/heesu.lee/DataAnalysisModule-for-CREEDIT/Batch/meta.yml")
+    batch_laungcher = Launcher("/Users/beonghyunkang/Documents/GitHub/DataAnalysisModule-for-CREEDIT/Batch/meta.yml")
 
     logger.info('Batch Start')
     batch_laungcher.start()

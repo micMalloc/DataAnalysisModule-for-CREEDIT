@@ -3,8 +3,8 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 from abc import *
-from Job.Job import Job
-from Log.Logger import Logger
+from Batch.Job.Job import Job
+from Batch.Log.Logger import Logger
 
 
 class DataCollector(Job):
