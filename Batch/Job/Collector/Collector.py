@@ -51,3 +51,4 @@ class DataCollectorFactory:
         if meta_data['domain'] in 'youtube':
             return YouTubeDataCollector(method=meta_data['method'])
 
+

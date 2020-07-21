@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="updata updatestatistics 07232343">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/joinTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/joinTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/truncateTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/truncateTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ezyWOkDnilgLOUQSNCuFgNTsvg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.updateStatistics">
+    <configuration name="Connection" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/Database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/Database/Connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DatabaseConnection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/ORMInterface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Launcher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Launcher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="updateStat (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/ORMInterface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="updateStat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/ORM_update" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/ORM_update/updateStat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="updateStatistics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataAnalysisModule-for-CREEDIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/ORMInterface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.updateStatistics" />
+        <item itemvalue="Python.updateStat (1)" />
+        <item itemvalue="Python.DatabaseConnection" />
+        <item itemvalue="Python.updateStat" />
+        <item itemvalue="Python.Launcher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="" />
+      <created>1595338746666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595338746666</updated>
+    </task>
+    <task id="LOCAL-00001" summary="commit07212248">
+      <created>1595339305977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595339305977</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit07212335">
+      <created>1595342149561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595342149561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test07222248">
+      <created>1595425726584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595425726584</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test07222248">
+      <created>1595427168303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595427168303</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update updatestat 07222345">
+      <created>1595429104192</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595429104192</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactoring with not successful updatestat 07230225">
+      <created>1595438707948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595438707948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactoring with not successful updatestat 07230225">
+      <created>1595438770087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595438770087</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactoring updatestat 07231655">
+      <created>1595490876502</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595490876502</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updata updatestatistics 07232343">
+      <created>1595515437861</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595515437861</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit07212248" />
+    <MESSAGE value="commit07212335" />
+    <MESSAGE value="test07222248" />
+    <MESSAGE value="update updatestat 07222345" />
+    <MESSAGE value="refactoring with not successful updatestat 07230225" />
+    <MESSAGE value="refactoring updatestat 07231655" />
+    <MESSAGE value="updata updatestatistics 07232343" />
+    <option name="LAST_COMMIT_MESSAGE" value="updata updatestatistics 07232343" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.977@0.23.1680.977" timestamp="1595424762957" />
+    <state x="138" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595425823584">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="138" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.977@0.23.1680.977" timestamp="1595425823584" />
+    <state x="428" y="97" width="640" height="777" key="DiffContextDialog" timestamp="1595425661026">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="428" y="97" width="640" height="777" key="DiffContextDialog/0.23.1680.977@0.23.1680.977" timestamp="1595425661026" />
+    <state x="446" y="376" key="FileChooserDialogImpl" timestamp="1595425915647">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="446" y="376" key="FileChooserDialogImpl/0.23.1680.977@0.23.1680.977" timestamp="1595425915647" />
+    <state width="818" height="264" key="GridCell.Tab.0.bottom" timestamp="1595516507801">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="818" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
+    <state width="818" height="264" key="GridCell.Tab.0.center" timestamp="1595516507801">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="818" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
+    <state width="818" height="264" key="GridCell.Tab.0.left" timestamp="1595516507800">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="818" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1595516507800" />
+    <state width="818" height="264" key="GridCell.Tab.0.right" timestamp="1595516507801">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="818" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
+    <state x="160" y="253" key="SettingsEditor" timestamp="1595425939245">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="160" y="253" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1595425939245" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595515440781">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595515440781" />
+    <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595425661026">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.977@0.23.1680.977" timestamp="1595425661026" />
+    <state x="208" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595424791724">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="208" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.977@0.23.1680.977" timestamp="1595424791724" />
+    <state x="35" y="307" key="git4idea.merge.GitPullDialog" timestamp="1595423926786">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="35" y="307" key="git4idea.merge.GitPullDialog/0.23.1680.977@0.23.1680.977" timestamp="1595423926786" />
+    <state x="925" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1595432950647">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="925" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1680.977@0.23.1680.977" timestamp="1595432950647" />
+  </component>
+</project>
