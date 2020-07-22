@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from sqlalchemy import Column, Integer,String
-from Batch.Job.ORMInterface.Connection import s
-from Batch.Job.ORMInterface.Connection import Base
+from Batch.Job.ORMInterface.DatabaseConnection import s
+from Batch.Job.ORMInterface.DatabaseConnection import Base
 from abc import *
 from Batch.Job.Job import Job
 from Batch.Log.Logger import Logger
