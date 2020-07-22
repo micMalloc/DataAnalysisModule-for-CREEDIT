@@ -2,8 +2,8 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from sqlalchemy import Column, Integer,String
-from Batch.Job.Database.Database import s
-from Batch.Job.Database.Database import Base
+from Batch.Job.ORMInterface.Connection import s
+from Batch.Job.ORMInterface.Connection import Base
 from abc import *
 from Batch.Job.Job import Job
 from Batch.Log.Logger import Logger
@@ -53,7 +53,7 @@ class DataCollectorFactory:
         if meta_data['domain'] in 'youtube':
             return YouTubeDataCollector(method=meta_data['method'])
 
-#add0721
+
 class channeltable(Base):
     __tablename__="channels"
     idchannel = Column(Integer, primary_key=True)
