@@ -17,6 +17,7 @@ engine = create_engine('mysql+mysqldb://ehdgus93:ehdgus93!@203.245.30.13:3306/db
 session = sessionmaker(bind=engine)
 s=session()
 
+
 metadata=MetaData()
 metadata.reflect(engine)
 Base=automap_base(metadata=metadata)
