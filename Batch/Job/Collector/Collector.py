@@ -1,9 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-from sqlalchemy import Column, Integer,String
-from Batch.Job.ORMInterface.DatabaseConnection import s
-from Batch.Job.ORMInterface.DatabaseConnection import Base
+
 from abc import *
 from Batch.Job.Job import Job
 from Batch.Log.Logger import Logger
@@ -54,16 +52,3 @@ class DataCollectorFactory:
             return YouTubeDataCollector(method=meta_data['method'])
 
 
-class channeltable(Base):
-    __tablename__="channels"
-    idchannel = Column(Integer, primary_key=True)
-    cid = Column(String(100))
-    cname = Column(String(100))
-
-    def __init__(self):
-        pass
-    def getchannel(self,s):
-        channellist=[]
-        for cid in s.query(channeltable.cid):
-            channellist.append(cid)
-        return channellist
