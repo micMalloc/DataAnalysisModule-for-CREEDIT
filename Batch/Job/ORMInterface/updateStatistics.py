@@ -1,49 +1,46 @@
-from sqlalchemy import Column, Integer,String,DateTime
+
 from Batch.Job.ORMInterface.DatabaseConnection import s
-from Batch.Job.ORMInterface.DatabaseConnection import Base
-from Batch.Job.ORMInterface.tableDefinition import categorymaptable
-from Batch.Job.ORMInterface.tableDefinition import stattable
-from Batch.Job.ORMInterface.tableDefinition import statisticstable
+from Batch.Job.ORMInterface.tableDefinition import Statistics
+from Batch.Job.ORMInterface.truncateTable import trun
+from Batch.Job.ORMInterface.calculator import calculate
+from Batch.Job.ORMInterface.joinTable import joinTable
+from datetime import datetime
 
-from datetime import datetime, timedelta, date
-
+now = datetime.now()
 CATEGORY = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
 ]
-END = 'end'
-START = 'start'
-data = {}
-#class statisticstable(Base):
-#    __tablename__="statistics"
-#    def __init__(self):
-#        pass
+def updateStatistics(data,channels):
+    for cno in CATEGORY:
+        if channels[cno] == "":
+            continue
 
+        for row in data[cno][channels[cno]]:
+            if row is 'end':
+                continue
+            if row is 'start':
+                continue
+            print(row, data[cno][channels[cno]][row])
+            updatedata = {'category_id': cno, 'time_stamp': row,'subscriberCount': data[cno][channels[cno]][row],'viewCount': 0}
+            statisitcsinstance = Statistics(**updatedata)
+            s.add(statisitcsinstance)
 
-
-def calculate():
-    target=datetime.now()
-    end=date(target.year,target.month,target.day)#today
-    target = datetime.now() - timedelta(days=11)
-    start = date(target.year, target.month, target.day)#before 11
-
-
-def trun():
-    s.execute('''TRUNCATE TABLE statistics''')
     s.commit()
-
-def joinCategorymapWithStat():
-    categorymap=categorymaptable()
-    stat=stattable()
-    for cno, cid, date, views, subs in s.query(categorymap,stat).filter(categorymap.cid==stat.cid).filter(stat.time_stamp>=calculate().start).filter(stat.time_stamp<=calculate().end):
-        print(cno,cid,date,views,subs)
-
-
-
+    s.close()
 
 def main():
-    #trun()
-    calculate()
-    joinCategorymapWithStat()
+
+    t=trun()
+    t.trunStatistics(s)
+
+    c=calculate()
+    end,start=c.calcaulateTime(now)
+
+    j=joinTable()
+    data=j.joinCategorymapWithStat(s,end,start)
+
+    channels=c.calculateVariation(data,end-start)
+    updateStatistics(data,channels)
 
 
 

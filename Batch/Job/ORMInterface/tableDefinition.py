@@ -4,6 +4,10 @@ from Batch.Job.ORMInterface.DatabaseConnection import Base
 from Batch.Job.ORMInterface.DatabaseConnection import engine
 from datetime import datetime
 
+Stat=Base.classes.stat
+Categorymap=Base.classes.categorymap
+Channels=Base.classes.channels
+Statistics=Base.classes.statistics
 #For Reference
 class stattable(Base):
     __tablename__=Table("stat",Base.metadata,autoload=True,autoload_with=engine)
