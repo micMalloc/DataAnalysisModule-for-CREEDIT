@@ -1,6 +1,7 @@
 
-from Batch.Job.ORMInterface.tableDefinition import stattable
+
 from Batch.Job.ORMInterface.DatabaseConnection import s
+from Batch.Job.ORMInterface.DatabaseConnection import Stat
 from Batch.Job.ORMInterface.selectTable import getchannel
 
 import urllib.request
@@ -18,11 +19,12 @@ def updateStat(s,channel_list):
         data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + channel[0] + "&key=" + key,context=context).read()
         stat = json.loads(data)["items"][0]["statistics"]
 
-        t=stattable(channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'],stat['videoCount'])
+        #t=stattable(channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'],stat['videoCount'])
+        data={'cid':"test",'time_stamp':date,'viewCount':stat['viewCount'],'subscriberCount':stat['subscriberCount'],'commentCount':stat['commentCount'],'hiddenSubscriberCount':stat['hiddenSubscriberCount'],'videoCount':stat['videoCount']}
+        statinstance=Stat(**data)
 
-
-        #s.add(t)
-        #s.commit()
+        s.add(statinstance)
+        s.commit()
 
 def main():
 

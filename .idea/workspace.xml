@@ -19,19 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="update updatestat 07222345">
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/selectTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/DataAnalysisModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataAnalysisModule/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="refactoring with not successful updatestat 07230225">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/Collector/Collector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/Collector/Collector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/selectTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/selectTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseConnection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataAnalysisModule-for-CREEDIT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/Database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Batch/Job/ORMInterface" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/Database/Database.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,10 +188,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.updateStat (1)" />
+        <item itemvalue="Python.DatabaseConnection" />
         <item itemvalue="Python.updateStatistics" />
         <item itemvalue="Python.updateStat" />
         <item itemvalue="Python.Launcher" />
-        <item itemvalue="Python.updateStat" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595429104192</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactoring with not successful updatestat 07230225">
+      <created>1595438707948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595438707948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactoring with not successful updatestat 07230225">
+      <created>1595438770087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595438770087</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +275,8 @@
     <MESSAGE value="commit07212335" />
     <MESSAGE value="test07222248" />
     <MESSAGE value="update updatestat 07222345" />
-    <option name="LAST_COMMIT_MESSAGE" value="update updatestat 07222345" />
+    <MESSAGE value="refactoring with not successful updatestat 07230225" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring with not successful updatestat 07230225" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
@@ -288,30 +295,30 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="446" y="376" key="FileChooserDialogImpl/0.23.1680.977@0.23.1680.977" timestamp="1595425915647" />
-    <state width="818" height="264" key="GridCell.Tab.0.bottom" timestamp="1595437948041">
+    <state width="818" height="264" key="GridCell.Tab.0.bottom" timestamp="1595490720523">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1595437948041" />
-    <state width="818" height="264" key="GridCell.Tab.0.center" timestamp="1595437948041">
+    <state width="818" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1595490720523" />
+    <state width="818" height="264" key="GridCell.Tab.0.center" timestamp="1595490720522">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1595437948041" />
-    <state width="818" height="264" key="GridCell.Tab.0.left" timestamp="1595437948040">
+    <state width="818" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1595490720522" />
+    <state width="818" height="264" key="GridCell.Tab.0.left" timestamp="1595490720521">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1595437948040" />
-    <state width="818" height="264" key="GridCell.Tab.0.right" timestamp="1595437948041">
+    <state width="818" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1595490720521" />
+    <state width="818" height="264" key="GridCell.Tab.0.right" timestamp="1595490720522">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1595437948041" />
+    <state width="818" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1595490720522" />
     <state x="160" y="253" key="SettingsEditor" timestamp="1595425939245">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="160" y="253" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1595425939245" />
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595429109880">
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595438784277">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595429109880" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595438784277" />
     <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595425661026">
       <screen x="0" y="23" width="1680" height="977" />
     </state>

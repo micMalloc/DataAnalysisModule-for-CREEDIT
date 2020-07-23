@@ -4,8 +4,7 @@ from Batch.Job.ORMInterface.DatabaseConnection import Base
 from Batch.Job.ORMInterface.DatabaseConnection import engine
 from datetime import datetime
 
-#auto increment..?
-# select하지 않아도 mapping이 되야 하는 거 아닌가.
+#For Reference
 class stattable(Base):
     __tablename__=Table("stat",Base.metadata,autoload=True,autoload_with=engine)
     ##__tablename__="stat"
