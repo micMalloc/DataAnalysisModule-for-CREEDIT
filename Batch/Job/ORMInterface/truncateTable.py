@@ -1,5 +1,3 @@
-
-
 class trun():
     def __init__(self):
         pass

@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="refactoring updatestat 07231655">
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/joinTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/truncateTable.py" afterDir="false" />
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="updata updatestatistics 07232343">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/selectTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/selectTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/joinTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/joinTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/truncateTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/truncateTable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" afterDir="false" />
     </list>
@@ -266,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595490876502</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updata updatestatistics 07232343">
+      <created>1595515437861</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595515437861</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +291,8 @@
     <MESSAGE value="update updatestat 07222345" />
     <MESSAGE value="refactoring with not successful updatestat 07230225" />
     <MESSAGE value="refactoring updatestat 07231655" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring updatestat 07231655" />
+    <MESSAGE value="updata updatestatistics 07232343" />
+    <option name="LAST_COMMIT_MESSAGE" value="updata updatestatistics 07232343" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
@@ -307,30 +311,30 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="446" y="376" key="FileChooserDialogImpl/0.23.1680.977@0.23.1680.977" timestamp="1595425915647" />
-    <state width="818" height="264" key="GridCell.Tab.0.bottom" timestamp="1595515390494">
+    <state width="818" height="264" key="GridCell.Tab.0.bottom" timestamp="1595516507801">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1595515390494" />
-    <state width="818" height="264" key="GridCell.Tab.0.center" timestamp="1595515390493">
+    <state width="818" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
+    <state width="818" height="264" key="GridCell.Tab.0.center" timestamp="1595516507801">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1595515390493" />
-    <state width="818" height="264" key="GridCell.Tab.0.left" timestamp="1595515390493">
+    <state width="818" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
+    <state width="818" height="264" key="GridCell.Tab.0.left" timestamp="1595516507800">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1595515390493" />
-    <state width="818" height="264" key="GridCell.Tab.0.right" timestamp="1595515390493">
+    <state width="818" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1595516507800" />
+    <state width="818" height="264" key="GridCell.Tab.0.right" timestamp="1595516507801">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="818" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1595515390493" />
+    <state width="818" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1595516507801" />
     <state x="160" y="253" key="SettingsEditor" timestamp="1595425939245">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="160" y="253" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1595425939245" />
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595490878264">
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595515440781">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595490878263" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595515440781" />
     <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595425661026">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
