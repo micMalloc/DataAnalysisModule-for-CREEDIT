@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from abc import *
 from Job.Job import Job
 from Log.Logger import Logger
-
+from Job.ORMInterface import updateStatistics
 
 class DataAnalyzer(Job):
 
@@ -38,7 +38,7 @@ class YouTubeDataAnalyzer(DataAnalyzer):
 
     def analyze_rate_of_change(self):
         self.logger.info("analyze rate_of_change")
-        pass
+        updateStatistics.main()
 
 
 class DataAnalyzerFactory:

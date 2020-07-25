@@ -3,8 +3,8 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 from abc import *
-from Batch.Job.Job import Job
-from Batch.Log.Logger import Logger
+from Job.Job import Job
+from Job.ORMInterface import updateStat
 
 
 class DataCollector(Job):
@@ -39,9 +39,7 @@ class YouTubeDataCollector(DataCollector):
 
     def collect_statistics_data(self):
         self.logger.info("collect statistics")
-        # DB 어세스
-        # 여기서 유투브 겟 정보를 --> DB 넣어야 될거 아니야
-        pass
+        updateStat.main()
 
 
 class DataCollectorFactory:

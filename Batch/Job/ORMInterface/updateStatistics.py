@@ -1,9 +1,9 @@
 
-from Batch.Job.ORMInterface.DatabaseConnection import s
-from Batch.Job.ORMInterface.tableDefinition import Statistics
-from Batch.Job.ORMInterface.truncateTable import trun
-from Batch.Job.ORMInterface.calculator import calculate
-from Batch.Job.ORMInterface.joinTable import joinTable
+from Job.ORMInterface.DatabaseConnection import s
+from Job.ORMInterface.tableDefinition import Statistics
+from Job.ORMInterface.truncateTable import trun
+from Job.ORMInterface.calculator import calculate
+from Job.ORMInterface.joinTable import joinTable
 from datetime import datetime
 
 now = datetime.now()

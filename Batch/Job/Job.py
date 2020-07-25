@@ -2,8 +2,8 @@ from abc import *
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+from Log.Logger import Logger
 
-from Batch.Log.Logger import Logger
 
 class Job(metaclass=ABCMeta):
     logger = None

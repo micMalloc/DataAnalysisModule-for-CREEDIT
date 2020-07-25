@@ -1,7 +1,7 @@
 from sqlalchemy import Table,Column, Integer,String,DateTime
-from Batch.Job.ORMInterface.DatabaseConnection import s
-from Batch.Job.ORMInterface.DatabaseConnection import Base
-from Batch.Job.ORMInterface.DatabaseConnection import engine
+from Job.ORMInterface.DatabaseConnection import s
+from Job.ORMInterface.DatabaseConnection import Base
+from Job.ORMInterface.DatabaseConnection import engine
 from datetime import datetime
 
 Stat=Base.classes.stat

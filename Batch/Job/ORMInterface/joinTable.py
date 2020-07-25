@@ -1,6 +1,6 @@
 
-from Batch.Job.ORMInterface.tableDefinition import Stat
-from Batch.Job.ORMInterface.tableDefinition import Categorymap
+from Job.ORMInterface.tableDefinition import Stat
+from Job.ORMInterface.tableDefinition import Categorymap
 
 
 CATEGORY = [

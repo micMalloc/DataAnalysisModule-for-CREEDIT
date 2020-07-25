@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer,String
-from Batch.Job.ORMInterface.DatabaseConnection import s
-from Batch.Job.ORMInterface.DatabaseConnection import Base
-from Batch.Job.ORMInterface.tableDefinition import Channels
+from Job.ORMInterface.DatabaseConnection import s
+from Job.ORMInterface.DatabaseConnection import Base
+from Job.ORMInterface.tableDefinition import Channels
 
 def getchannel(s):
     channellist=[]
