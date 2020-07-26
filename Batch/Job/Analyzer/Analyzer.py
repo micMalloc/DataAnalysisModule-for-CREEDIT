@@ -40,6 +40,12 @@ class YouTubeDataAnalyzer(DataAnalyzer):
         self.logger.info("analyze rate_of_change")
         updateStatistics.main()
 
+    def analyze_correlation(self):
+        pass
+
+    def analyze_regression(self):
+        pass
+
 
 class DataAnalyzerFactory:
 
