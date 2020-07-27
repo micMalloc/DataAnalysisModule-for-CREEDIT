@@ -17,8 +17,9 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: python3 -m pip3 install --upgrade pip
-           if [ -f Batch/requirements.txt ]; then pip install -r requirements.txt; fi
+      run: |
+        python3 -m pip3 install --upgrade pip
+        if [ -f Batch/requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test
       run: python3 Batch/Launcher.py
       env: 
