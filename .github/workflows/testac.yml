@@ -20,7 +20,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        if [ -f Batch/requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f Batch/requirements.txt ]; then pip install -r Batch/requirements.txt; fi
     - name: Test
       run: python3 Batch/Launcher.py
       env: 
