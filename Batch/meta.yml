@@ -1,9 +1,9 @@
 job:
-  - name: data_analyze
+  - name: data_collect
     domain: youtube
-    method: rate_of_change
-    
-  # - name: data_collect
+    method: statistics
+  # - name: data_analyze
   #   domain: youtube
-  #   method: statistics
+  #   method: rate_of_change
+
     
