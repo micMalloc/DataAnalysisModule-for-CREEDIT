@@ -49,7 +49,7 @@ if __name__ == "__main__":
     logger = Logger.get_instance().get_logger()
     
     logger.info("Create Logger")
-    batch_launcher = Launcher("/Batch/meta.yml")
+    batch_launcher = Launcher("Batch/meta.yml")
 
     logger.info('Batch Start')
     batch_launcher.start()
