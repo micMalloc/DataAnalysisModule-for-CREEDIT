@@ -18,7 +18,7 @@ from sqlalchemy.orm import sessionmaker,Session,session
 # os.environ['DB_PASSWORD']
 # os.environ['DB_IP_ADDRESS']
 ##automap with some tables we want look at.###############
-engine = create_engine('mysql+mysqldb://' + os.environ['DB_ID']+":"+os.environ['DB_PASSWORD']+"@"+os.environ['DB_IP_ADDRESS']+'/db_creedit_new', convert_unicode=True, echo=True)
+engine = create_engine('mysql+mysqldb://' + os.environ['DB_ID']+":"+os.environ['DB_PASSWORD']+"@"+os.environ['DB_IP_ADDRESS']+'/db_creedit', convert_unicode=True, echo=True)
 
 metadata=MetaData()
 metadata.reflect(engine,only=['stat','categorymap','channels','statistics'])
