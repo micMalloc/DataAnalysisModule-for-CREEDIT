@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="updata updatestatistics 07232343">
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="update updatestatistics 08042250">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/tableDefinition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="updatestatistics_refactoring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,9 +185,9 @@
       <list>
         <item itemvalue="Python.updateStatistics" />
         <item itemvalue="Python.updateStat (1)" />
-        <item itemvalue="Python.DatabaseConnection" />
         <item itemvalue="Python.updateStat" />
         <item itemvalue="Python.Launcher" />
+        <item itemvalue="Python.DatabaseConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595515437861</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update updatestatistics 08042248">
+      <created>1596548941884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596548941884</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update updatestatistics 08042250">
+      <created>1596549066104</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596549066104</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +302,9 @@
     <MESSAGE value="refactoring with not successful updatestat 07230225" />
     <MESSAGE value="refactoring updatestat 07231655" />
     <MESSAGE value="updata updatestatistics 07232343" />
-    <option name="LAST_COMMIT_MESSAGE" value="updata updatestatistics 07232343" />
+    <MESSAGE value="update updatestatistics 08042248" />
+    <MESSAGE value="update updatestatistics 08042250" />
+    <option name="LAST_COMMIT_MESSAGE" value="update updatestatistics 08042250" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
@@ -330,10 +343,10 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="160" y="253" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1595696710954" />
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1595515440781">
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1596549067748">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1595515440781" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1596549067748" />
     <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595425661026">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
