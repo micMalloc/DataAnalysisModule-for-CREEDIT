@@ -7,7 +7,7 @@ from datetime import datetime
 Stat=Base.classes.stat
 Categorymap=Base.classes.categorymap
 Channels=Base.classes.channels
-Statistics=Base.classes.statistics
+
 #For Reference
 class stattable(Base):
     __tablename__=Table("stat",Base.metadata,autoload=True,autoload_with=engine)
@@ -44,6 +44,7 @@ class categorymaptable(Base):
         self.cid=cid
         self.category_id=category_id
 
+'''
 class statisticstable(Base):
     #__tablename__="statistics"
     __tablename__ = Table("statistics", Base.metadata, autoload=True, autoload_with=engine)
@@ -59,6 +60,7 @@ class statisticstable(Base):
         self.time_stamp = time_stamp
         self.subscriberCount=subscriberCount
         self.viewCount=viewCount
+'''
 
 class channeltable(Base):
     #__tablename__="channels"
