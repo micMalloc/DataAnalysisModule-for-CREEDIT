@@ -4,13 +4,13 @@ import json
 import ssl
 from datetime import datetime
 
-key = ""
+key = "AIzaSyC5didUPL_gr0qQmOSGkiTm-nTYAsyhF1s"
 
-local = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
-# creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='', db='db_creedit', charset='utf8')
+#local = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
+creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='ehdgus93!', db='db_creedit', charset='utf8')
 
-cursor = local.cursor()
-# manager = creedit.cursor()
+cursor = creedit.cursor()
+#manager = creedit.cursor()
 
 sql = 'select cid from channels'
 
@@ -35,8 +35,9 @@ for channel in channels:
     cursor.execute(sql, (channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'], stat['videoCount']))
     # manager.execute(sql, (channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'], stat['videoCount']))
 
-local.commit()
-local.close()
+#local.commit()
 
-# creedit.commit()
-# creedit.close()
+#local.close()
+
+creedit.commit()
+creedit.close()

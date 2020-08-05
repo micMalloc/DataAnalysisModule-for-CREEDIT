@@ -20,7 +20,7 @@ class joinTable():
 
         query = s.query(Categorymap.category_id, Stat.cid, Stat.time_stamp, Stat.viewCount,
                         Stat.subscriberCount).filter(Categorymap.cid == Stat.cid).filter(
-            Stat.time_stamp >= start).filter(Stat.time_stamp <= end).order_by(Categorymap.category_id)
+            Stat.time_stamp >= start).filter(Stat.time_stamp <= end).order_by(Stat.time_stamp)
 
         for cno, cid, date, views, subs in query:
             data[cno][cid] = {}

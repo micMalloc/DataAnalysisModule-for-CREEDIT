@@ -1,7 +1,7 @@
 import pymysql
 from datetime import datetime, timedelta, date
 
-creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='', db='db_creedit', charset='utf8')
+creedit = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='ehdgus93!', db='db_creedit', charset='utf8')
 # creedit = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
 manager = creedit.cursor()
 

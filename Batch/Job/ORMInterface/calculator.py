@@ -31,7 +31,7 @@ class calculate():
 
                 dy = data[cno][key][v] - data[cno][key][u]
 
-                if target_channel is "":
+                if target_channel== "":
                     target_channel = key
                     val = dy / dx
                     continue
