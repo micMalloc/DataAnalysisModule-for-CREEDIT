@@ -48,3 +48,4 @@ class calculate():
             channels[cno] = target_channel
         return channels
 #testrebase
+#testmaseter
