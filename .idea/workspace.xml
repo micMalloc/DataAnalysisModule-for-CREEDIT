@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="update updatestatistics 08042250">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="update updatestatistics 08042303" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596549066104</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update updatestatistics 08042303">
+      <created>1596549839461</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596549839461</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +309,8 @@
     <MESSAGE value="updata updatestatistics 07232343" />
     <MESSAGE value="update updatestatistics 08042248" />
     <MESSAGE value="update updatestatistics 08042250" />
-    <option name="LAST_COMMIT_MESSAGE" value="update updatestatistics 08042250" />
+    <MESSAGE value="update updatestatistics 08042303" />
+    <option name="LAST_COMMIT_MESSAGE" value="update updatestatistics 08042303" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
@@ -343,10 +349,10 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="160" y="253" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1595696710954" />
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1596549067748">
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1596549842278">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1596549067748" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1596549842278" />
     <state x="100" y="123" width="640" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595425661026">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
