@@ -166,8 +166,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Job" />
       <item itemvalue="Python.Analyzer" />
+      <item itemvalue="Python.Job" />
       <item itemvalue="Python.Launcher" />
       <item itemvalue="Python.updateStat" />
       <item itemvalue="Python.updateStatistics" />
