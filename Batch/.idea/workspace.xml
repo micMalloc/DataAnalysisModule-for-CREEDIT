@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Batch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Batch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Job/ORMInterface/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/joinTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/joinTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/tableDefinition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/tableDefinition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/updateStat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/updateStat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/updateStatistics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataAnalysisModule/updateStat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataAnalysisModule/updateStat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataAnalysisModule/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataAnalysisModule/updateStatistics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +165,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Job" />
       <item itemvalue="Python.Analyzer" />
+      <item itemvalue="Python.Job" />
       <item itemvalue="Python.Launcher" />
       <item itemvalue="Python.updateStat" />
       <item itemvalue="Python.updateStatistics" />
