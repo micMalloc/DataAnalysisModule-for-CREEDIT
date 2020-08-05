@@ -47,5 +47,3 @@ class calculate():
                         val = dy / dx
             channels[cno] = target_channel
         return channels
-#testrebase
-#testmaseter

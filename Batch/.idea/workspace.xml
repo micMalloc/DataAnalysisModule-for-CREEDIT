@@ -26,6 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Job/ORMInterface/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="refactoring_updatestatistics" />
+        <entry key="$PROJECT_DIR$/.." value="testgit2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -165,8 +166,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Analyzer" />
       <item itemvalue="Python.Job" />
+      <item itemvalue="Python.Analyzer" />
       <item itemvalue="Python.Launcher" />
       <item itemvalue="Python.updateStat" />
       <item itemvalue="Python.updateStatistics" />
