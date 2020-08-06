@@ -21,8 +21,7 @@ jobs:
         pip install flake8 pytest
         if [ -f Batch/requirements.txt ]; then pip install -r Batch/requirements.txt; fi
     - name: Test
-      #run: python3 DataAnalysisModule/updateStatistics.py
-      run: python3 Batch/Launcher.py  
+      run: python3 DataAnalysisModule/updateStatistics.py
       env: 
           DB_ID: ${{ secrets.DB_ID }}
           DB_IP_ADDRESS: ${{ secrets.DB_IP_ADDRESS }}
