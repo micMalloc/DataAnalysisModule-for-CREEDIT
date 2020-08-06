@@ -22,7 +22,6 @@
     <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="add pymysql in requirements.txt 08051509">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/Job/ORMInterface/updateStatistics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

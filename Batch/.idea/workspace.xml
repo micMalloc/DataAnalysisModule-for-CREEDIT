@@ -25,10 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="">
+    <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="test print 08062338">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/DatabaseConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Job/ORMInterface/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/Job/ORMInterface/updateStatistics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,6 +194,14 @@
       <option name="presentableId" value="Default" />
       <updated>1593068766205</updated>
     </task>
+    <task id="LOCAL-00001" summary="test print 08062338">
+      <created>1596724710349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596724710349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +214,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test print 08062338" />
+    <option name="LAST_COMMIT_MESSAGE" value="test print 08062338" />
   </component>
   <component name="WindowStateProjectService">
     <state x="946" y="126" key="#updateStat" timestamp="1596610858798">
@@ -233,5 +244,9 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="683" y="150" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1596610886771" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1596724713385">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.977@0.23.1680.977" timestamp="1596724713385" />
   </component>
 </project>
