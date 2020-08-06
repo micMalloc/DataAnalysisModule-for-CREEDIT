@@ -1,11 +1,11 @@
 import pymysql
 import os
 from datetime import datetime, timedelta, date
-print(os.environ['DB_ID'])
-print(type(os.environ['DB_ID']))
+)
 db_ip = str(os.environ['DB_IP_ADDRESS'])
 db_id = str(os.environ['DB_ID'])
 db_pw = str(os.environ['DB_PASSWORD'])
+print(db_id)
 '''
 # creedit = pymysql.connect(host=os.environ['DB_IP_ADDRESS'], user=os.environ['DB_ID'], password=os.environ['DB_PASSWORD'], db='db_creedit', charset='utf8')
 # creedit = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
