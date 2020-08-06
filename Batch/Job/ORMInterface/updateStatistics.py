@@ -30,17 +30,17 @@ def updateStatistics(data,channels):
 
 def main():
 
-    #t=trun()
-    #t.trunStatistics(s)
+    t=trun()
+    t.trunStatistics(s)
 
-    #c=calculate()
-    #end,start=c.calcaulateTime(now)
+    c=calculate()
+    end,start=c.calcaulateTime(now)
 
-    #j=joinTable()
-    #data=j.joinCategorymapWithStat(s,end,start)
+    j=joinTable()
+    data=j.joinCategorymapWithStat(s,end,start)
 
-    #channels=c.calculateVariation(data,end-start)
-    #updateStatistics(data,channels)
+    channels=c.calculateVariation(data,end-start)
+    updateStatistics(data,channels)
 
 
 
