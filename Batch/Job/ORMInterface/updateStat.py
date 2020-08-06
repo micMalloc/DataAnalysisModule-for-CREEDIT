@@ -24,8 +24,8 @@ def updateStat(s,channel_list):
         statinstance=Stat(**updatedata)
         print("done")
 
-        #s.add(statinstance)
-        #s.commit()
+        s.add(statinstance)
+        s.commit()
 
 def main():
 
