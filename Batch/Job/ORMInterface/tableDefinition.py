@@ -10,7 +10,7 @@ from datetime import datetime
 Stat=Base.classes.stat
 Categorymap=Base.classes.categorymap
 Channels=Base.classes.channels
-Statistics=Base.classes.statistics
+#Statistics=Base.classes.statistics
 
 #For Reference
 class stattable(Base):

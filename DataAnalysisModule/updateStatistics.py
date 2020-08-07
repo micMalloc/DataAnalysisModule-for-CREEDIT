@@ -5,10 +5,8 @@ from datetime import datetime, timedelta, date
 db_ip = str(os.environ['DB_IP_ADDRESS'])
 db_id = str(os.environ['DB_ID'])
 db_pw = str(os.environ['DB_PASSWORD'])
-print(db_id)
-'''
-# creedit = pymysql.connect(host=os.environ['DB_IP_ADDRESS'], user=os.environ['DB_ID'], password=os.environ['DB_PASSWORD'], db='db_creedit', charset='utf8')
-# creedit = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
+
+
 creedit = pymysql.connect(host=db_ip, user=db_id, password=db_pw, db='db_creedit', charset='utf8')
 manager = creedit.cursor()
 
@@ -114,4 +112,4 @@ for cno in CATEGORY:
 
 creedit.commit()
 creedit.close()
-'''
+
