@@ -25,9 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="restore">
-      <change beforePath="$PROJECT_DIR$/../DataAnalysisModule/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataAnalysisModule/updateStatistics.py" afterDir="false" />
-    </list>
+    <list default="true" id="aadf7c5d-6200-44d2-bb7a-359f12dfc70b" name="Default Changelist" comment="restore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,22 +228,38 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="946" y="126" key="#updateStat/0.23.1680.977@0.23.1680.977" timestamp="1596610858798" />
-    <state width="1659" height="282" key="GridCell.Tab.0.bottom" timestamp="1596689361165">
+    <state width="1659" height="326" key="GridCell.Tab.0.bottom" timestamp="1596808305716">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="1659" height="282" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1596689361165" />
-    <state width="1659" height="282" key="GridCell.Tab.0.center" timestamp="1596689361164">
+    <state width="1659" height="326" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1596808305716" />
+    <state width="1659" height="326" key="GridCell.Tab.0.center" timestamp="1596808305716">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="1659" height="282" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1596689361164" />
-    <state width="1659" height="282" key="GridCell.Tab.0.left" timestamp="1596689361164">
+    <state width="1659" height="326" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1596808305716" />
+    <state width="1659" height="326" key="GridCell.Tab.0.left" timestamp="1596808305715">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="1659" height="282" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1596689361164" />
-    <state width="1659" height="282" key="GridCell.Tab.0.right" timestamp="1596689361164">
+    <state width="1659" height="326" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1596808305715" />
+    <state width="1659" height="326" key="GridCell.Tab.0.right" timestamp="1596808305716">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="1659" height="282" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1596689361164" />
+    <state width="1659" height="326" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1596808305716" />
+    <state width="1659" height="326" key="GridCell.Tab.1.bottom" timestamp="1596808305717">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1659" height="326" key="GridCell.Tab.1.bottom/0.23.1680.977@0.23.1680.977" timestamp="1596808305717" />
+    <state width="1659" height="326" key="GridCell.Tab.1.center" timestamp="1596808305717">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1659" height="326" key="GridCell.Tab.1.center/0.23.1680.977@0.23.1680.977" timestamp="1596808305717" />
+    <state width="1659" height="326" key="GridCell.Tab.1.left" timestamp="1596808305716">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1659" height="326" key="GridCell.Tab.1.left/0.23.1680.977@0.23.1680.977" timestamp="1596808305716" />
+    <state width="1659" height="326" key="GridCell.Tab.1.right" timestamp="1596808305717">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state width="1659" height="326" key="GridCell.Tab.1.right/0.23.1680.977@0.23.1680.977" timestamp="1596808305717" />
     <state x="683" y="150" key="SettingsEditor" timestamp="1596610886771">
       <screen x="0" y="23" width="1680" height="977" />
     </state>

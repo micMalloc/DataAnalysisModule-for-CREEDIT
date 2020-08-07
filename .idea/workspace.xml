@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="add pymysql in requirements.txt 08051509">
-      <change beforePath="$PROJECT_DIR$/DataAnalysisModule/updateStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalysisModule/updateStatistics.py" afterDir="false" />
+    <list default="true" id="68e584fd-e0a7-4374-8347-a15a345f78a6" name="Default Changelist" comment="restore dataanalysis_updatestatistics">
+      <change beforePath="$PROJECT_DIR$/Batch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Batch/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596607772091</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="restore dataanalysis_updatestatistics">
+      <created>1596807830473</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596807830473</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +327,8 @@
     <MESSAGE value="update updatestatistics 08042250" />
     <MESSAGE value="update updatestatistics 08042303" />
     <MESSAGE value="add pymysql in requirements.txt 08051509" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pymysql in requirements.txt 08051509" />
+    <MESSAGE value="restore dataanalysis_updatestatistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="restore dataanalysis_updatestatistics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595424762957">
@@ -339,22 +347,22 @@
       <screen x="0" y="23" width="1680" height="977" />
     </state>
     <state x="446" y="376" key="FileChooserDialogImpl/0.23.1680.977@0.23.1680.977" timestamp="1595425915647" />
-    <state width="819" height="264" key="GridCell.Tab.0.bottom" timestamp="1596611303817">
+    <state width="1154" height="264" key="GridCell.Tab.0.bottom" timestamp="1596808310799">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="819" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1596611303817" />
-    <state width="819" height="264" key="GridCell.Tab.0.center" timestamp="1596611303816">
+    <state width="1154" height="264" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1596808310799" />
+    <state width="1154" height="264" key="GridCell.Tab.0.center" timestamp="1596808310798">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="819" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1596611303816" />
-    <state width="819" height="264" key="GridCell.Tab.0.left" timestamp="1596611303815">
+    <state width="1154" height="264" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1596808310798" />
+    <state width="1154" height="264" key="GridCell.Tab.0.left" timestamp="1596808310798">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="819" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1596611303815" />
-    <state width="819" height="264" key="GridCell.Tab.0.right" timestamp="1596611303816">
+    <state width="1154" height="264" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1596808310798" />
+    <state width="1154" height="264" key="GridCell.Tab.0.right" timestamp="1596808310798">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
-    <state width="819" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1596611303816" />
+    <state width="1154" height="264" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1596808310798" />
     <state x="134" y="278" key="SettingsEditor" timestamp="1596607736914">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
