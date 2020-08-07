@@ -2,7 +2,7 @@ import pymysql
 import os
 from datetime import datetime, timedelta, date
 
-db_ip = '203.245.30.13:3306'
+db_ip = str(os.environ['DB_IP_ADDRESS'])
 db_id = str(os.environ['DB_ID'])
 db_pw = str(os.environ['DB_PASSWORD'])
 
