@@ -14,7 +14,11 @@ now = datetime.now()
 date = "{0}-{1}-{2}".format(now.year, now.month, now.day)
 
 def updateStat(s,channel_list):
+    tempit=0
     for channel in channel_list:
+        if tempit==0:
+            tempit=tempit+1
+            continue
 
         data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + channel[0] + "&key=" + key,context=context).read()
         stat = json.loads(data)["items"][0]["statistics"]
