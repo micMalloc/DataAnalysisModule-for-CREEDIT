@@ -32,7 +32,7 @@ end = date(target.year, target.month, target.day)
 target = datetime.now() - timedelta(days=11)
 start = date(target.year, target.month, target.day)
 
-sql = "select categorymap.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from categorymap join stat where stat.cid!=UC0GHWMeK1Qyxtu7dI309IDA and categorymap.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(str(start), str(end))
+sql = "select categorymap.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from categorymap join stat where categorymap.cid = stat.cid and stat.cid!='UC0GHWMeK1Qyxtu7dI309IDA' and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(str(start), str(end))
 # sql = "select Category.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from Category join stat where Category.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(str(start), str(end))
 manager.execute(sql)
 rows = manager.fetchall()
