@@ -8,7 +8,7 @@ db_pw = str(os.environ['DB_PASSWORD'])
 
 # creedit = pymysql.connect(host=os.environ['DB_IP_ADDRESS'], user=os.environ['DB_ID'], password=os.environ['DB_PASSWORD'], db='db_creedit', charset='utf8')
 # creedit = pymysql.connect(host='localhost', user='root', password='', db='creedit', charset='utf8')
-creedit = pymysql.connect(host=db_ip, port='3306',user=db_id, password=db_pw, db='db_creedit', charset='utf8')
+creedit = pymysql.connect(host=db_ip, port=3306,user=db_id, password=db_pw, db='db_creedit', charset='utf8')
 manager = creedit.cursor()
 
 CATEGORY = [
