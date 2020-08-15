@@ -8,7 +8,7 @@ name: test
       #branches: [ master ]
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '5 0 * * *'
 
     
 jobs:
