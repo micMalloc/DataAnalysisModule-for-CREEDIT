@@ -50,13 +50,16 @@ if __name__=="__main__":
 
 import pymysql
 import os
-from datetime import datetime, timedelta,date
+import datetime
+#from datetime import datetime,timedelta,date
 
 
 def main():
     db_ip = str(os.environ['DB_IP_ADDRESS'])
     db_id = str(os.environ['DB_ID'])
     db_pw = str(os.environ['DB_PASSWORD'])
+
+
 
     creedit = pymysql.connect(host=db_ip, user=db_id, password=db_pw, db='db_creedit', charset='utf8')
     manager = creedit.cursor()
@@ -76,11 +79,13 @@ def main():
     for category in CATEGORY:
         data[category] = {}
 
-    target = datetime.now()
+    target = datetime.datetime.now()
+
     end = datetime.date(target.year, target.month, target.day)
 
-    target = datetime.now() - timedelta(days=11)
+    target = datetime.datetime.now() - datetime.timedelta(days=11)
     start = datetime.date(target.year, target.month, target.day)
+    print(end,start)
 
     sql = "select categorymap.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from categorymap join stat where categorymap.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(
         str(start), str(end))
