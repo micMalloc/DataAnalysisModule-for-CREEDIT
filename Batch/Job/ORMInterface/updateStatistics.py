@@ -47,115 +47,120 @@ def main():
 if __name__=="__main__":
     main()
 '''
+
 import pymysql
 import os
-from datetime import datetime, timedelta, date
+from datetime import datetime, timedelta,date
 
-db_ip = str(os.environ['DB_IP_ADDRESS'])
-db_id = str(os.environ['DB_ID'])
-db_pw = str(os.environ['DB_PASSWORD'])
 
-creedit = pymysql.connect(host=db_ip, user=db_id, password=db_pw, db='db_creedit', charset='utf8')
-manager = creedit.cursor()
+def main():
+    db_ip = str(os.environ['DB_IP_ADDRESS'])
+    db_id = str(os.environ['DB_ID'])
+    db_pw = str(os.environ['DB_PASSWORD'])
 
-CATEGORY = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-]
+    creedit = pymysql.connect(host=db_ip, user=db_id, password=db_pw, db='db_creedit', charset='utf8')
+    manager = creedit.cursor()
 
-END = 'end'
-START = 'start'
+    CATEGORY = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+    ]
 
-manager.execute("truncate table statistics")
-creedit.commit()
+    END = 'end'
+    START = 'start'
 
-data = {}
+    manager.execute("truncate table statistics")
+    creedit.commit()
 
-for category in CATEGORY:
-    data[category] = {}
+    data = {}
 
-target = datetime.now()
-end = date(target.year, target.month, target.day)
+    for category in CATEGORY:
+        data[category] = {}
 
-target = datetime.now() - timedelta(days=11)
-start = date(target.year, target.month, target.day)
+    target = datetime.now()
+    end = datetime.date(target.year, target.month, target.day)
 
-sql = "select categorymap.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from categorymap join stat where categorymap.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(
-    str(start), str(end))
-# sql = "select Category.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from Category join stat where Category.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(str(start), str(end))
-manager.execute(sql)
-rows = manager.fetchall()
+    target = datetime.now() - timedelta(days=11)
+    start = datetime.date(target.year, target.month, target.day)
 
-for cno, cid, date, views, subs in rows:
-    data[cno][cid] = {}
-    data[cno][cid][END] = str(end)
+    sql = "select categorymap.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from categorymap join stat where categorymap.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(
+        str(start), str(end))
+    # sql = "select Category.category_id, stat.cid, stat.time_stamp, stat.viewCount, stat.subscriberCount from Category join stat where Category.cid = stat.cid and stat.time_stamp between \'{0}\' and \'{1}\' order by stat.time_stamp".format(str(start), str(end))
+    manager.execute(sql)
+    rows = manager.fetchall()
 
-channel_id = ""
-category = 0
+    for cno, cid, date, views, subs in rows:
+        data[cno][cid] = {}
+        data[cno][cid][END] = str(end)
 
-for cno, cid, date, views, subs in rows:
-    date = str(date)
+    channel_id = ""
+    category = 0
 
-    if category != cno:
-        category = cno
-        data[cno][cid][START] = str(date)
+    for cno, cid, date, views, subs in rows:
+        date = str(date)
 
-    if subs != 0:
-        data[cno][cid][date] = subs
-    else:
-        data[cno][cid][date] = views
+        if category != cno:
+            category = cno
+            data[cno][cid][START] = str(date)
 
-delta = end - start
-channels = {}
+        if subs != 0:
+            data[cno][cid][date] = subs
+        else:
+            data[cno][cid][date] = views
 
-for cno in CATEGORY:
-    dx = delta.days
-    target_channel = ""
-    val = 0
+    delta = end - start
+    channels = {}
 
-    for key in data[cno].keys():
-        if START not in data[cno][key].keys():
-            print(key)
-            continue
+    for cno in CATEGORY:
+        dx = delta.days
+        target_channel = ""
+        val = 0
 
-        u = data[cno][key][START]
-        v = data[cno][key][END]
+        for key in data[cno].keys():
+            if START not in data[cno][key].keys():
+                print(key)
+                continue
 
-        dy = data[cno][key][v] - data[cno][key][u]
+            u = data[cno][key][START]
+            v = data[cno][key][END]
 
-        if target_channel is "":
-            target_channel = key
-            val = dy / dx
-            continue
+            dy = data[cno][key][v] - data[cno][key][u]
 
-        if val <= (dy / dx):
-            if val == (dy / dx):
-                if data[cno][target_channel][v] < data[cno][key][v]:
-                    target_channel = key
-                    val = dy / dx
-            else:
+            if target_channel is "":
                 target_channel = key
                 val = dy / dx
+                continue
 
-    channels[cno] = target_channel
+            if val <= (dy / dx):
+                if val == (dy / dx):
+                    if data[cno][target_channel][v] < data[cno][key][v]:
+                        target_channel = key
+                        val = dy / dx
+                else:
+                    target_channel = key
+                    val = dy / dx
 
-for cno in CATEGORY:
-    if channels[cno] == "":
-        continue
+        channels[cno] = target_channel
 
-    sql = "select cname from channels where cid = \'{0}\'".format(channels[cno])
-    manager.execute(sql)
-    cname = manager.fetchall()[0][0]
-    print(cno, cname)
-
-    for row in data[cno][channels[cno]]:
-        if row is END:
+    for cno in CATEGORY:
+        if channels[cno] == "":
             continue
-        if row is START:
-            continue
-        print(row, data[cno][channels[cno]][row])
-        sql = "insert into statistics(category, time_stamp, subscriberCount, viewCount) values(%s, %s, %s, %s)"
-        manager.execute(sql, (cno, row, data[cno][channels[cno]][row], 0))
 
-creedit.commit()
-creedit.close()
+        sql = "select cname from channels where cid = \'{0}\'".format(channels[cno])
+        manager.execute(sql)
+        cname = manager.fetchall()[0][0]
+        print(cno, cname)
 
+        for row in data[cno][channels[cno]]:
+            if row is END:
+                continue
+            if row is START:
+                continue
+            print(row, data[cno][channels[cno]][row])
+            sql = "insert into statistics(category, time_stamp, subscriberCount, viewCount) values(%s, %s, %s, %s)"
+            manager.execute(sql, (cno, row, data[cno][channels[cno]][row], 0))
+
+    creedit.commit()
+    creedit.close()
+
+if __name__=="__main__":
+    main()
