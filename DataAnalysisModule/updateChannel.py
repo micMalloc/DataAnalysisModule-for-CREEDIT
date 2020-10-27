@@ -11,7 +11,7 @@ connection = pymysql.connect(
     db='creedit',
     charset='utf8'
 )
-# connection = pymysql.connect(host='203.245.30.13', user='ehdgus93', password='ehdgus93!', db='db_creedit', charset='utf8')
+# connection = pymysql.connect(host='203.245.30.13', user='', password='', db='db_creedit', charset='utf8')
 cursor = connection.cursor()
 
 sql = 'insert into channels(cid, cname, category) values(%s, %s, %s)'

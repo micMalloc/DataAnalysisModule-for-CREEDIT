@@ -1,5 +1,7 @@
 {
-    job: [
-        
-    ]
+    "job" : {
+        "Collector" : {
+            "YouTube" : "statistics"
+        }
+    }
 }

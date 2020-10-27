@@ -21,15 +21,19 @@ def updateStat(s,channel_list):
             continue
 
         data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + channel[0] + "&key=" + key,context=context).read()
-        stat = json.loads(data)["items"][0]["statistics"]
+        
+        try:
+            stat = json.loads(data)["items"][0]["statistics"]
+            #t=stattable(channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'],stat['videoCount'])
+            updatedata={'cid':channel,'time_stamp':date,'viewCount':stat['viewCount'],'subscriberCount':stat['subscriberCount'],'commentCount':stat['commentCount'],'hiddenSubscriberCount':stat['hiddenSubscriberCount'],'videoCount':stat['videoCount']}
+            statinstance=Stat(**updatedata)
+            print("done")
 
-        #t=stattable(channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'],stat['videoCount'])
-        updatedata={'cid':channel,'time_stamp':date,'viewCount':stat['viewCount'],'subscriberCount':stat['subscriberCount'],'commentCount':stat['commentCount'],'hiddenSubscriberCount':stat['hiddenSubscriberCount'],'videoCount':stat['videoCount']}
-        statinstance=Stat(**updatedata)
-        print("done")
-
-        s.add(statinstance)
-        s.commit()
+            s.add(statinstance)
+            s.commit()
+        except KeyError:
+            print("Does Not Exist Channel : " + channel[0])
+            continue
 
 def main():
 

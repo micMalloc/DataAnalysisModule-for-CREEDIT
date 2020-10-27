@@ -31,7 +31,12 @@ print(len(channels))
 for channel in channels:
     print(channel[0])
     data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&id="+channel[0]+"&key="+key, context=context).read()
-    stat = json.loads(data)["items"][0]["statistics"]
+
+    try:
+        stat = json.loads(data)["items"][0]["statistics"]
+        print(stat)
+    except KeyError:
+        continue 
     #cursor.execute(sql, (channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'], stat['videoCount']))
     # manager.execute(sql, (channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'], stat['videoCount']))
 
