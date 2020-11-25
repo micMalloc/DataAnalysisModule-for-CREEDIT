@@ -16,8 +16,7 @@ date = "{0}-{1}-{2}".format(now.year, now.month, now.day)
 def updateStat(s,channel_list):
     tempit=0
     for channel in channel_list:
-        if tempit==0:
-            tempit=tempit+1
+        if(channel[0][2]=='0' or channel[0][2]=='L'):#filtering not exist specific channel(20201126)
             continue
 
         data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + channel[0] + "&key=" + key,context=context).read()
@@ -25,7 +24,15 @@ def updateStat(s,channel_list):
         try:
             stat = json.loads(data)["items"][0]["statistics"]
             #t=stattable(channel, date, stat['viewCount'], stat['subscriberCount'], stat['commentCount'], stat['hiddenSubscriberCount'],stat['videoCount'])
-            updatedata={'cid':channel,'time_stamp':date,'viewCount':stat['viewCount'],'subscriberCount':stat['subscriberCount'],'commentCount':stat['commentCount'],'hiddenSubscriberCount':stat['hiddenSubscriberCount'],'videoCount':stat['videoCount']}
+            
+            #change some by hiddensubscriber issue and replace unnecessary column(commentcount)' value with 0
+            if(stat['hiddenSubscriberCount']):
+               updatedata = {'cid': channel, 'time_stamp': date, 'viewCount': stat['viewCount'],
+                          'subscriberCount': 0,'commentCount':0,
+                          'hiddenSubscriberCount': stat['hiddenSubscriberCount'], 'videoCount': stat['videoCount']}
+            else:
+               updatedata={'cid':channel,'time_stamp':date,'viewCount':stat['viewCount'],'subscriberCount':stat['subscriberCount'],'commentCount':0,'hiddenSubscriberCount':stat['hiddenSubscriberCount'],'videoCount':stat['videoCount']}
+        
             statinstance=Stat(**updatedata)
             print("done")
 
