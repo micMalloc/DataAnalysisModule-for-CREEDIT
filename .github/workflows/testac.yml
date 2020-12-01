@@ -9,7 +9,7 @@ name: test
 #      branches: [ master ]
 on:
   schedule:
-    - cron: '30 0 * * *'
+    - cron: '50 0 * * *'
 
     
 jobs:
