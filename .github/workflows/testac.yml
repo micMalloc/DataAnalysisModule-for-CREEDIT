@@ -2,14 +2,14 @@
 name: test
 
 
-#on:
-#    push:
-#      branches: [ master ]
-#    pull_request:
-#      branches: [ master ]
 on:
-  schedule:
-    - cron: '50 0 * * *'
+    push:
+      branches: [ master ]
+    pull_request:
+      branches: [ master ]
+#on:
+#  schedule:
+#    - cron: '50 0 * * *'
 
     
 jobs:
